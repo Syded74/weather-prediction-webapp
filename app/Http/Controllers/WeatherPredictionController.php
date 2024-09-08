@@ -63,7 +63,7 @@ class WeatherPredictionController extends Controller
             Log::info('Data sent to Flask API:', $data);
 
             // Send data to the Flask API
-            $response = Http::post('http://127.0.0.1:5000/predict', ['features' => $data]);
+            $response = Http::post('https://monkfish-app-pyj8d.ondigitalocean.app/predict', ['features' => $data]);
 
             if ($response->successful()) {
                 $predictionData = $response->json();

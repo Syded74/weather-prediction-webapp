@@ -6,6 +6,7 @@
     <title>Weather Prediction App</title>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation"></script>
     <style>
         @keyframes fade-in-down {
             0% {
@@ -52,6 +53,6 @@
     </main>
  
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    
+    @stack('scripts')
 </body>
 </html>
